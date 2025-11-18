@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="OIP.jpeg" type="image/x-icon">
+     <link rel="stylesheet" href="test.html"> 
+    <title>germany</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+       <img src="th.webp" alt="">
+       <h1 id="a">germany test</h1>
+    </nav>
+    <div id="b">
+        <h1>sing in</h1>
+        <p><input type="text" autofocus placeholder="name" id="username"></p>      
+        <button onclick="goToTest()"> STAR!</button>
+        
+    </div>
+     <script>
+        function goToTest() {
+            let name = document.getElementById("username").value;
+            window.location.href = "test.html?name=" + encodeURIComponent(name);
+        }
+    </script>
+</body>
+</html>
